@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MainApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- exported styles -->
+  <link rel="stylesheet" href="styles/css/bootstrap.min.css">
+  <!-- personal stylesheet -->
+  <link rel="stylesheet" href="styles/css/style.css">
+  <title>Kir Perepölov</title>
+</head>
+<body>
+
+  <header class="container">
+    <navbar-component></navbar-component>
+
+  </header>
+
+  <main class="container">
+    <ui-view></ui-view>
+  </main>
+<!-- FOOTER -->
+  <footer class="container">
+    <footer-component></footer-component>
+  </footer>
+
+  <!-- libraries and frameworks -->
+  <script src="lib/jquery-2.1.4.min.js" charset="utf-8"></script>
+  <script src="lib/bootstrap.min.js" charset="utf-8"></script>
+  <script src="lib/angular.min.js" charset="utf-8"></script>
+  <script src="lib/angular-ui-router.min.js" charset="utf-8"></script>
+  <!-- the main common modules of MainApp -->
+  <script src="src/common/MainApp.js" charset="utf-8"></script>
+  <!-- routes -->
+  <script src="src/common/routes.js" charset="utf-8"></script>
+  <!-- MainApp artifacts -->
+  <script src="src/common/navbar.component.js" charset="utf-8"></script>
+  <script src="src/common/footer.component.js" charset="utf-8"></script>
+  <!-- <script src="src/" charset="utf-8"></script> -->
+</body>
+</html>

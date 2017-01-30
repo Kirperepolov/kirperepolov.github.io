@@ -1,0 +1,39 @@
+/* line 1, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#fb, #tw, #go {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #888888;
+  display: inline-block;
+  margin: 15px 15px 0 0;
+  background-image: url(../../src/images/socials.png);
+}
+
+/* line 10, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#tw:hover {
+  background-position: 0 -40px;
+}
+
+/* line 13, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#go {
+  background-position: 40px 0;
+}
+
+/* line 16, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#fb {
+  background-position: 80px 0;
+}
+
+/* line 19, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#go:hover {
+  background-position: 40px -40px;
+}
+
+/* line 22, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#fb:hover {
+  background-position: 80px -40px;
+}
+
+/*FOOTER END*/
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiO0FBQUEsQUFBQSxHQUFHLEVBQUUsQUFBRixHQUFLLEVBQUMsQUFBRCxHQUFJLENBQUM7RUFDWCxNQUFNLEVBQUcsSUFBSTtFQUNiLEtBQUssRUFBRyxJQUFJO0VBQ1osYUFBYSxFQUFFLElBQUk7RUFDbkIsZ0JBQWdCLEVBQUUsT0FBTztFQUN6QixPQUFPLEVBQUcsWUFBWTtFQUN0QixNQUFNLEVBQUUsYUFBYTtFQUNyQixnQkFBZ0IsRUFBRSxpQ0FBaUM7Q0FDbkQ7OztBQUNELEFBQUEsR0FBRyxBQUFBLE1BQU0sQ0FBQztFQUNULG1CQUFtQixFQUFFLE9BQU87Q0FDNUI7OztBQUNELEFBQUEsR0FBRyxDQUFDO0VBQ0gsbUJBQW1CLEVBQUUsTUFBTTtDQUMzQjs7O0FBQ0QsQUFBQSxHQUFHLENBQUM7RUFDSCxtQkFBbUIsRUFBRSxNQUFNO0NBQzNCOzs7QUFDRCxBQUFBLEdBQUcsQUFBQSxNQUFNLENBQUM7RUFDVCxtQkFBbUIsRUFBRSxVQUFVO0NBQy9COzs7QUFDRCxBQUFBLEdBQUcsQUFBQSxNQUFNLENBQUM7RUFDVCxtQkFBbUIsRUFBRSxVQUFVO0NBQy9COztBQUNELGNBQWMiCn0= */
