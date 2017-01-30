@@ -1,4 +1,51 @@
-#fb, #tw,#go {
+/* BODY ITSELF*/
+body{
+  background: url(../../src/images/Javascript.png) center top no-repeat;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* end of body style */
+
+
+// HEADER
+
+  // .jumbotron{
+  //   background-image: url(../../src/images/desert-mountain-highway-sky-cloud.jpg);
+  //   background-position: center -660px;
+  //   margin: 0;
+  //   .navbar-default {
+  //     background-color: transparent;
+  //     color: #fff;
+  //     border: none;
+  //     .navbar-nav{
+  //       li{
+  //         a{
+  //           color: #ddd;
+  //           &:hover,
+  //           &:active{
+  //             color: #fff;
+  //             cursor: pointer;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+// HEADER END
+
+// MAIN
+main{
+  font-size: 13pt;
+  ul {
+    list-style: circle outside;
+   }
+}
+// MAIN END
+
+
+/* FOOTER */
+#tw {
 		height: 	40px;
 		width: 	40px;
 		border-radius: 20px;
@@ -6,20 +53,22 @@
 		display: 	inline-block;
 		margin: 15px 15px 0 0;
 		background-image: url(../../src/images/socials.png);
+    &:hover {
+  		background-position: 0 -40px;
+  	}
 	}
-	#tw:hover {
-		background-position: 0 -40px;
-	}
-	#go {
-		background-position: 40px 0;
-	}
-	#fb {
-		background-position: 80px 0;
-	}
-	#go:hover {
+#go {
+  @extend #tw;
+	background-position: 40px 0;
+  &:hover {
 		background-position: 40px -40px;
 	}
-	#fb:hover {
+}
+#fb {
+  @extend #tw;
+	background-position: 80px 0;
+  &:hover {
 		background-position: 80px -40px;
 	}
-	/*FOOTER END*/
+}
+/*FOOTER END*/

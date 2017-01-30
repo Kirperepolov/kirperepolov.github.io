@@ -1,5 +1,25 @@
-/* line 1, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
-#fb, #tw, #go {
+/* BODY ITSELF*/
+/* line 2, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+body {
+  background: url(../../src/images/Javascript.png) center top no-repeat;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* end of body style */
+/* line 38, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+main {
+  font-size: 13pt;
+}
+
+/* line 40, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+main ul {
+  list-style: circle outside;
+}
+
+/* FOOTER */
+/* line 48, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#tw, #go, #fb {
   height: 40px;
   width: 40px;
   border-radius: 20px;
@@ -9,31 +29,31 @@
   background-image: url(../../src/images/socials.png);
 }
 
-/* line 10, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
-#tw:hover {
+/* line 56, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#tw:hover, #go:hover, #fb:hover {
   background-position: 0 -40px;
 }
 
-/* line 13, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 60, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #go {
   background-position: 40px 0;
 }
 
-/* line 16, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
-#fb {
-  background-position: 80px 0;
-}
-
-/* line 19, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 63, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #go:hover {
   background-position: 40px -40px;
 }
 
-/* line 22, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 67, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+#fb {
+  background-position: 80px 0;
+}
+
+/* line 70, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #fb:hover {
   background-position: 80px -40px;
 }
 
 /*FOOTER END*/
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiO0FBQUEsQUFBQSxHQUFHLEVBQUUsQUFBRixHQUFLLEVBQUMsQUFBRCxHQUFJLENBQUM7RUFDWCxNQUFNLEVBQUcsSUFBSTtFQUNiLEtBQUssRUFBRyxJQUFJO0VBQ1osYUFBYSxFQUFFLElBQUk7RUFDbkIsZ0JBQWdCLEVBQUUsT0FBTztFQUN6QixPQUFPLEVBQUcsWUFBWTtFQUN0QixNQUFNLEVBQUUsYUFBYTtFQUNyQixnQkFBZ0IsRUFBRSxpQ0FBaUM7Q0FDbkQ7OztBQUNELEFBQUEsR0FBRyxBQUFBLE1BQU0sQ0FBQztFQUNULG1CQUFtQixFQUFFLE9BQU87Q0FDNUI7OztBQUNELEFBQUEsR0FBRyxDQUFDO0VBQ0gsbUJBQW1CLEVBQUUsTUFBTTtDQUMzQjs7O0FBQ0QsQUFBQSxHQUFHLENBQUM7RUFDSCxtQkFBbUIsRUFBRSxNQUFNO0NBQzNCOzs7QUFDRCxBQUFBLEdBQUcsQUFBQSxNQUFNLENBQUM7RUFDVCxtQkFBbUIsRUFBRSxVQUFVO0NBQy9COzs7QUFDRCxBQUFBLEdBQUcsQUFBQSxNQUFNLENBQUM7RUFDVCxtQkFBbUIsRUFBRSxVQUFVO0NBQy9COztBQUNELGNBQWMiCn0= */
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxnQkFBZ0I7O0FBQ2hCLEFBQUEsSUFBSSxDQUFBO0VBQ0YsVUFBVSxFQUFFLG9DQUFvQyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsU0FBUztFQUNyRSxlQUFlLEVBQUUsS0FBSztFQUN0QixXQUFXLEVBQUUsb0JBQW9CO0NBQ2xDOztBQUNELHVCQUF1Qjs7QUErQnZCLEFBQUEsSUFBSSxDQUFBO0VBQ0YsU0FBUyxFQUFFLElBQUk7Q0FJaEI7OztBQUxELEFBRUUsSUFGRSxDQUVGLEVBQUUsQ0FBQztFQUNELFVBQVUsRUFBRSxjQUFjO0NBQzFCOztBQUtKLFlBQVk7O0FBQ1osQUFBQSxHQUFHLEVBWUgsQUFaQSxHQVlHLEVBT0gsQUFuQkEsR0FtQkcsQ0FuQkM7RUFDRixNQUFNLEVBQUcsSUFBSTtFQUNiLEtBQUssRUFBRyxJQUFJO0VBQ1osYUFBYSxFQUFFLElBQUk7RUFDbkIsZ0JBQWdCLEVBQUUsT0FBTztFQUN6QixPQUFPLEVBQUcsWUFBWTtFQUN0QixNQUFNLEVBQUUsYUFBYTtFQUNyQixnQkFBZ0IsRUFBRSxpQ0FBaUM7Q0FJbkQ7OztBQVhGLEFBUUksR0FSRCxBQVFDLE1BQU8sRUFJWCxBQVpBLEdBWUcsQUFKQyxNQUFPLEVBV1gsQUFuQkEsR0FtQkcsQUFYQyxNQUFPLENBQUM7RUFDUixtQkFBbUIsRUFBRSxPQUFPO0NBQzVCOzs7QUFFSixBQUFBLEdBQUcsQ0FBQztFQUVILG1CQUFtQixFQUFFLE1BQU07Q0FJM0I7OztBQU5ELEFBR0UsR0FIQyxBQUdELE1BQU8sQ0FBQztFQUNSLG1CQUFtQixFQUFFLFVBQVU7Q0FDL0I7OztBQUVGLEFBQUEsR0FBRyxDQUFDO0VBRUgsbUJBQW1CLEVBQUUsTUFBTTtDQUkzQjs7O0FBTkQsQUFHRSxHQUhDLEFBR0QsTUFBTyxDQUFDO0VBQ1IsbUJBQW1CLEVBQUUsVUFBVTtDQUMvQjs7QUFFRixjQUFjIgp9 */

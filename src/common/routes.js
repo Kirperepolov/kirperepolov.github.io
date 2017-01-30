@@ -8,12 +8,12 @@
   function RoutesConfig($stateProvider, $urlRouterProvider){
 
     // Redirect to tab 1 if no other URL matches
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('');
 
     // Set up UI states
     $stateProvider
       .state('home',{
-        url:'/',
+        url:'',
         templateUrl:"src/home/home.template.html"
       });
 
