@@ -1,8 +1,12 @@
 /* BODY ITSELF*/
 body{
-  background: url(../../src/images/Javascript.png) center top no-repeat;
+  background: url(../../src/images/desert-mountain-highway-sky-cloud.jpg) center top no-repeat;
   background-size: cover;
   font-family: 'Ubuntu', sans-serif;
+  color: #ddd;
+  .container{
+    background-color: rgba(95, 59, 33, 0.7);
+  }
 }
 /* end of body style */
 

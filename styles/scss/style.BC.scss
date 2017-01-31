@@ -1,0 +1,190 @@
+main{
+  border-bottom: 4px double #777;
+  padding: 40px 0 20px;
+  background-color: rgba(0,0,0, 0.42);
+}
+$text-color:#d9d9d9;
+$text-size: 1.6rem;
+body {
+  background-image: url(../../src/images/keyboard-wallpaper-13.jpg);
+  background-position:  top center;
+  background-color: #000;
+  background-repeat: repeat-y;
+  color: $text-color;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+// header start
+header{
+  @extend main;
+}
+nav .navbar-header a
+{
+  color:$text-color;
+  text-decoration: none;
+  &:hover, &:active{
+    text-decoration: none;
+  }
+}
+.navbar-inverse .navbar-nav{
+  li{
+    a{
+      font-size: $text-size;
+      color: $text-color;
+      &:focus,&:hover {
+        color: #fff;
+          background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+      }
+    }
+    &.active{
+      a,a:focus,a:hover{
+        background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+      }
+    }
+  }
+}
+// header end
+.svg-logo-desktop {
+    width: 20.25rem;
+    max-width: 100%;
+    max-height: 4.125rem;
+    :hover{
+      cursor: pointer;
+    }
+    g {
+      fill: #FFF;
+    }
+}
+.navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+h1{
+  margin-top: 0;
+}
+h2{
+  &::before{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a {
+    text-decoration: none;
+    color: $text-color;
+    &:hover, &:active{
+      color: $text-color;
+    }
+  }
+}
+
+.infoblock{
+  h3{
+    margin: 0 0 20px;
+    a {
+      text-decoration: none;
+      color: $text-color;
+      &:hover{
+        color: #9cc2e3;
+      }
+    }
+    font-size: 2.8rem;
+  }
+  h4{
+    @extend h3;
+    font-size: 2.2rem
+  }
+  h5{
+    @extend h3;
+    font-size: 2.0rem
+  }
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border: 5px solid rgba(255,255,255,0);
+  position: relative;
+  p, a, ul>li{
+    font-size: $text-size;
+    letter-spacing: 0.7px;
+    line-height: 2.5rem;
+  }
+  a{
+    color: #9cc2e3;
+    &:hover{
+      color: #9cc2e3;
+    }
+    &.contact{
+      color: $text-color;
+    }
+  }
+}
+.session-task, .session-result{
+  @extend .infoblock;
+}
+// FOOTER START
+footer{
+  @extend main;
+  position: relative;
+  bottom: 0;
+  .admin{
+    color: transparent;
+    &:hover{
+      color:rgba(156, 194, 227, 0.5)
+    }
+  }
+  #tw {
+  		height: 	40px;
+  		width: 	40px;
+  		border-radius: 20px;
+  		display: 	inline-block;
+  		margin: 15px 15px 0 0;
+  		background-image: url(../../src/images/socials.png);
+      background-color: transparent;
+      &:hover {
+    		background-position: 0 -40px;
+    	}
+  	}
+  #go {
+    @extend #tw;
+  	background-position: -80px 0;
+    &:hover {
+  		background-position: -80px -40px;
+  	}
+  }
+  #fb {
+    @extend #tw;
+  	background-position: -40px 0;
+    &:hover {
+  		background-position: -40px -40px;
+  	}
+  }
+  #li {
+    @extend #tw;
+    background-position: -120px 0;
+    &:hover {
+      background-position: -120px -40px;
+    }
+  }
+  #gh {
+    @extend #tw;
+    background-position: -160px 0;
+    &:hover {
+      background-position: -160px -40px;
+    }
+  }
+}
+// FOOTER END
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+}
+
+@media (max-width: 991px) {
+  /* Header */
+  h1{
+    font-size: 32px;
+  }
+  /*Header end*/
+}

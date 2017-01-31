@@ -1,24 +1,30 @@
 /* BODY ITSELF*/
 /* line 2, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 body {
-  background: url(../../src/images/Javascript.png) center top no-repeat;
+  background: url(../../src/images/desert-mountain-highway-sky-cloud.jpg) center top no-repeat;
   background-size: cover;
   font-family: 'Ubuntu', sans-serif;
+  color: #ddd;
+}
+
+/* line 7, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+body .container {
+  background-color: rgba(95, 59, 33, 0.7);
 }
 
 /* end of body style */
-/* line 38, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 42, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 main {
   font-size: 13pt;
 }
 
-/* line 40, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 44, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 main ul {
   list-style: circle outside;
 }
 
 /* FOOTER */
-/* line 48, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 52, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #tw, #go, #fb {
   height: 40px;
   width: 40px;
@@ -29,31 +35,31 @@ main ul {
   background-image: url(../../src/images/socials.png);
 }
 
-/* line 56, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 60, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #tw:hover, #go:hover, #fb:hover {
   background-position: 0 -40px;
 }
 
-/* line 60, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 64, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #go {
   background-position: 40px 0;
 }
 
-/* line 63, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 67, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #go:hover {
   background-position: 40px -40px;
 }
 
-/* line 67, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 71, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #fb {
   background-position: 80px 0;
 }
 
-/* line 70, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
+/* line 74, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 #fb:hover {
   background-position: 80px -40px;
 }
 
 /*FOOTER END*/
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxnQkFBZ0I7O0FBQ2hCLEFBQUEsSUFBSSxDQUFBO0VBQ0YsVUFBVSxFQUFFLG9DQUFvQyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsU0FBUztFQUNyRSxlQUFlLEVBQUUsS0FBSztFQUN0QixXQUFXLEVBQUUsb0JBQW9CO0NBQ2xDOztBQUNELHVCQUF1Qjs7QUErQnZCLEFBQUEsSUFBSSxDQUFBO0VBQ0YsU0FBUyxFQUFFLElBQUk7Q0FJaEI7OztBQUxELEFBRUUsSUFGRSxDQUVGLEVBQUUsQ0FBQztFQUNELFVBQVUsRUFBRSxjQUFjO0NBQzFCOztBQUtKLFlBQVk7O0FBQ1osQUFBQSxHQUFHLEVBWUgsQUFaQSxHQVlHLEVBT0gsQUFuQkEsR0FtQkcsQ0FuQkM7RUFDRixNQUFNLEVBQUcsSUFBSTtFQUNiLEtBQUssRUFBRyxJQUFJO0VBQ1osYUFBYSxFQUFFLElBQUk7RUFDbkIsZ0JBQWdCLEVBQUUsT0FBTztFQUN6QixPQUFPLEVBQUcsWUFBWTtFQUN0QixNQUFNLEVBQUUsYUFBYTtFQUNyQixnQkFBZ0IsRUFBRSxpQ0FBaUM7Q0FJbkQ7OztBQVhGLEFBUUksR0FSRCxBQVFDLE1BQU8sRUFJWCxBQVpBLEdBWUcsQUFKQyxNQUFPLEVBV1gsQUFuQkEsR0FtQkcsQUFYQyxNQUFPLENBQUM7RUFDUixtQkFBbUIsRUFBRSxPQUFPO0NBQzVCOzs7QUFFSixBQUFBLEdBQUcsQ0FBQztFQUVILG1CQUFtQixFQUFFLE1BQU07Q0FJM0I7OztBQU5ELEFBR0UsR0FIQyxBQUdELE1BQU8sQ0FBQztFQUNSLG1CQUFtQixFQUFFLFVBQVU7Q0FDL0I7OztBQUVGLEFBQUEsR0FBRyxDQUFDO0VBRUgsbUJBQW1CLEVBQUUsTUFBTTtDQUkzQjs7O0FBTkQsQUFHRSxHQUhDLEFBR0QsTUFBTyxDQUFDO0VBQ1IsbUJBQW1CLEVBQUUsVUFBVTtDQUMvQjs7QUFFRixjQUFjIgp9 */
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxnQkFBZ0I7O0FBQ2hCLEFBQUEsSUFBSSxDQUFBO0VBQ0YsVUFBVSxFQUFFLDJEQUEyRCxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsU0FBUztFQUM1RixlQUFlLEVBQUUsS0FBSztFQUN0QixXQUFXLEVBQUUsb0JBQW9CO0VBQ2pDLEtBQUssRUFBRSxJQUFJO0NBSVo7OztBQVJELEFBS0UsSUFMRSxDQUtGLFVBQVUsQ0FBQTtFQUNSLGdCQUFnQixFQUFFLHFCQUFxQjtDQUN4Qzs7QUFFSCx1QkFBdUI7O0FBK0J2QixBQUFBLElBQUksQ0FBQTtFQUNGLFNBQVMsRUFBRSxJQUFJO0NBSWhCOzs7QUFMRCxBQUVFLElBRkUsQ0FFRixFQUFFLENBQUM7RUFDRCxVQUFVLEVBQUUsY0FBYztDQUMxQjs7QUFLSixZQUFZOztBQUNaLEFBQUEsR0FBRyxFQVlILEFBWkEsR0FZRyxFQU9ILEFBbkJBLEdBbUJHLENBbkJDO0VBQ0YsTUFBTSxFQUFHLElBQUk7RUFDYixLQUFLLEVBQUcsSUFBSTtFQUNaLGFBQWEsRUFBRSxJQUFJO0VBQ25CLGdCQUFnQixFQUFFLE9BQU87RUFDekIsT0FBTyxFQUFHLFlBQVk7RUFDdEIsTUFBTSxFQUFFLGFBQWE7RUFDckIsZ0JBQWdCLEVBQUUsaUNBQWlDO0NBSW5EOzs7QUFYRixBQVFJLEdBUkQsQUFRQyxNQUFPLEVBSVgsQUFaQSxHQVlHLEFBSkMsTUFBTyxFQVdYLEFBbkJBLEdBbUJHLEFBWEMsTUFBTyxDQUFDO0VBQ1IsbUJBQW1CLEVBQUUsT0FBTztDQUM1Qjs7O0FBRUosQUFBQSxHQUFHLENBQUM7RUFFSCxtQkFBbUIsRUFBRSxNQUFNO0NBSTNCOzs7QUFORCxBQUdFLEdBSEMsQUFHRCxNQUFPLENBQUM7RUFDUixtQkFBbUIsRUFBRSxVQUFVO0NBQy9COzs7QUFFRixBQUFBLEdBQUcsQ0FBQztFQUVILG1CQUFtQixFQUFFLE1BQU07Q0FJM0I7OztBQU5ELEFBR0UsR0FIQyxBQUdELE1BQU8sQ0FBQztFQUNSLG1CQUFtQixFQUFFLFVBQVU7Q0FDL0I7O0FBRUYsY0FBYyIKfQ== */
