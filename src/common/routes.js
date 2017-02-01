@@ -27,8 +27,14 @@
         templateUrl:'src/examples/examples.template.html',
         controller: 'ExamplesController',
         controllerAs: 'exmpCtrl',
-        resolve:function(){}
+        resolve:{
+          examples: ['LoadService',
+            function (LoadService) {
+              return LoadService.loadExamples()
+                .then(function (list) {
+                  return list;
+                });
+            }]}
       });
-
   };
 }());

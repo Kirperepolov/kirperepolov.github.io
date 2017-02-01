@@ -1,0 +1,11 @@
+<div class="contact">
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="example in exmpCtrl.examples">
+      <h4 class="text-center">{{example.header}}</h4>
+      <img ng-src="src/images/examples/{{example.shortName}}" alt="{{example.shortName}}">
+      <p class="text-center"><a ng-href="{{example.url}}">link</a></p>
+      <p class="text-center">{{example.description}}</p>
+
+    </div>
+  </div>
+</div>

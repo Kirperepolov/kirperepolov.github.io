@@ -7,6 +7,7 @@
   ExamplesController.$inject = ['examples'];
   function ExamplesController(examples){
     var exmpCtrl = this;
-    
+    exmpCtrl.examples = examples;
+
   };
 }());
