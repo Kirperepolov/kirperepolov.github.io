@@ -20,6 +20,14 @@
       .state('contact',{
         url:'/contact-me',
         templateUrl:'src/contact/contact.template.html'
+      })
+
+      .state('examples',{
+        url:'/examples',
+        templateUrl:'src/examples/examples.template.html',
+        controller: 'ExamplesController',
+        controllerAs: 'exmpCtrl',
+        resolve:function(){}
       });
 
   };

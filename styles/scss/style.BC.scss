@@ -9,10 +9,9 @@ body {
   background-image: url(../../src/images/keyboard-wallpaper-13.jpg);
   background-position:  top center;
   background-color: #000;
-  background-repeat: repeat-y;
+  background-size:cover;
   color: $text-color;
   font-family: 'Ubuntu', sans-serif;
-  position: relative;
 }
 // header start
 header{
@@ -33,7 +32,7 @@ nav .navbar-header a
       color: $text-color;
       &:focus,&:hover {
         color: #fff;
-          background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+        background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
       }
     }
     &.active{
@@ -45,15 +44,15 @@ nav .navbar-header a
 }
 // header end
 .svg-logo-desktop {
-    width: 20.25rem;
-    max-width: 100%;
-    max-height: 4.125rem;
-    :hover{
-      cursor: pointer;
-    }
-    g {
-      fill: #FFF;
-    }
+  width: 20.25rem;
+  max-width: 100%;
+  max-height: 4.125rem;
+  :hover{
+    cursor: pointer;
+  }
+  g {
+    fill: #FFF;
+  }
 }
 .navbar-inverse {
   background-color: transparent;
@@ -123,53 +122,63 @@ h2{
 // FOOTER START
 footer{
   @extend main;
-  position: relative;
-  bottom: 0;
-  .admin{
-    color: transparent;
-    &:hover{
-      color:rgba(156, 194, 227, 0.5)
+  border: none;
+  .footBlocks{
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li{
+        margin-top: 15px;
+        line-height: 40px;
+        a{
+          font-size: $text-size;
+          color: $text-color;
+          padding: 0 10px;
+          &:hover,&:active{
+            color: #fff;
+            background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+            text-decoration: none;
+          }
+        }
+      }
     }
-  }
-  #tw {
-  		height: 	40px;
-  		width: 	40px;
-  		border-radius: 20px;
-  		display: 	inline-block;
-  		margin: 15px 15px 0 0;
-  		background-image: url(../../src/images/socials.png);
-      background-color: transparent;
-      &:hover {
-    		background-position: 0 -40px;
-    	}
-  	}
-  #go {
-    @extend #tw;
-  	background-position: -80px 0;
-    &:hover {
-  		background-position: -80px -40px;
-  	}
-  }
-  #fb {
-    @extend #tw;
-  	background-position: -40px 0;
-    &:hover {
-  		background-position: -40px -40px;
-  	}
-  }
-  #li {
-    @extend #tw;
-    background-position: -120px 0;
-    &:hover {
-      background-position: -120px -40px;
+    .soc{
+      display: flex;
+      justify-content: center;
+      %socials {
+        height: 	40px;
+        width: 	40px;
+        border-radius: 20px;
+        display: 	inline-block;
+        margin: 15px 15px 0 0;
+        background-image: url(../../src/images/socials_big.png);
+        background-color: transparent;
+        background-size: 500%;
+      }
+      #fb {
+        @extend %socials;
+        background-position: 0 -120px;
+        &:hover {
+          background-position: 0 0;
+        }
+      }
+      #li {
+        @extend %socials;
+        background-position: -40px -40px;
+        &:hover {
+          background-position: -40px 0;
+        }
+      }
+      #gh {
+        @extend %socials;
+        background-position: -80px -40px;
+        &:hover {
+          background-position: -80px 0;
+        }
+      }
     }
-  }
-  #gh {
-    @extend #tw;
-    background-position: -160px 0;
-    &:hover {
-      background-position: -160px -40px;
-    }
+
   }
 }
 // FOOTER END
