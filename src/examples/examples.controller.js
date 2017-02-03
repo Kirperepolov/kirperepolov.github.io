@@ -9,5 +9,7 @@
     var exmpCtrl = this;
     exmpCtrl.examples = examples;
 
+    
+
   };
 }());

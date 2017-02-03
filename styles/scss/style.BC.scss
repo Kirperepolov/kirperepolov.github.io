@@ -43,6 +43,8 @@ nav .navbar-header a
   }
 }
 // header end
+
+// MAIN
 .svg-logo-desktop {
   width: 20.25rem;
   max-width: 100%;
@@ -119,6 +121,35 @@ h2{
 .session-task, .session-result{
   @extend .infoblock;
 }
+// examples directive
+.example-details{
+  position: relative;
+  // height: 300px;
+  img{
+    width: 100%;
+  }
+  %examples{
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #000;
+    background: linear-gradient(to bottom, transparent,#fff,transparent);
+    margin: 0;
+    padding: 10px;
+  }
+  p{
+    @extend %examples;
+    bottom: 0;
+    height: 60px;
+  }
+  h4{
+    @extend %examples;
+    top:0;
+  }
+}
+// MAIN END
+
+
 // FOOTER START
 footer{
   @extend main;
