@@ -1,11 +1,14 @@
-<div class="contact">
-  <div class="row">
-    <div class="col-sm-4" ng-repeat="example in exmpCtrl.examples">
-      <h4 class="text-center">{{example.header}}</h4>
-      <img ng-src="src/images/examples/{{example.shortName}}" alt="{{example.shortName}}">
-      <p class="text-center"><a ng-href="{{example.url}}">link</a></p>
-      <p class="text-center">{{example.description}}</p>
-
-    </div>
+<div class="container-fluid">
+  <div class="row examples">
+    <div class="example-details"
+    ng-class="exmpCtrl.whattheClass($index)"
+    ng-repeat="example in exmpCtrl.examples"
+    ng-click="exmpCtrl.activate($index)">
+      <img ng-src="src/images/examples/{{example.shortName+'_480.png'}}" alt="{{example.shortName}}">
+      <a  ng-href="{{example.url}}" target="_blank">
+        <h4 class="text-center">{{example.header}}</h4>
+        <p class="text-center">{{example.description}}</p>
+      </a>
+    </a>
   </div>
 </div>

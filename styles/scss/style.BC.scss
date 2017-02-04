@@ -1,21 +1,32 @@
-main{
-  border-bottom: 4px double #777;
-  padding: 40px 0 20px;
-  background-color: rgba(0,0,0, 0.42);
-}
-$text-color:#d9d9d9;
+// variables
+$text-color:#E6E1FF;
+$text-color-active: #fff;
 $text-size: 1.6rem;
+$block-color1: #8577CC;
+$block-color2:#534A7F;
+$block-color3:#A694FF;
+$block-color4:#360FFF;
+
+%block{
+  border-bottom: 4px double $block-color4;
+  padding: 40px 0 20px;
+  background-color: $block-color2;
+}
+// BODY COMMON PART
 body {
   background-image: url(../../src/images/keyboard-wallpaper-13.jpg);
   background-position:  top center;
-  background-color: #000;
+  background: $block-color2;
   background-size:cover;
   color: $text-color;
   font-family: 'Ubuntu', sans-serif;
+
 }
 // header start
 header{
-  @extend main;
+  @extend %block;
+  background-color: $block-color1;
+
 }
 nav .navbar-header a
 {
@@ -25,13 +36,13 @@ nav .navbar-header a
     text-decoration: none;
   }
 }
-.navbar-inverse .navbar-nav{
+.navbar-nav{
   li{
     a{
       font-size: $text-size;
       color: $text-color;
       &:focus,&:hover {
-        color: #fff;
+        color: $text-color-active;
         background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
       }
     }
@@ -45,106 +56,147 @@ nav .navbar-header a
 // header end
 
 // MAIN
-.svg-logo-desktop {
-  width: 20.25rem;
-  max-width: 100%;
-  max-height: 4.125rem;
-  :hover{
-    cursor: pointer;
-  }
-  g {
-    fill: #FFF;
-  }
-}
-.navbar-inverse {
-  background-color: transparent;
-  border: none;
-}
-h1{
-  margin-top: 0;
-}
-h2{
-  &::before{
-    content: "";
-    display: table;
-    clear: both;
-  }
-  a {
-    text-decoration: none;
-    color: $text-color;
-    &:hover, &:active{
-      color: $text-color;
+main {
+  @extend %block;
+  .svg-logo-desktop {
+    width: 20.25rem;
+    max-width: 100%;
+    max-height: 4.125rem;
+    :hover{
+      cursor: pointer;
+    }
+    g {
+      fill: $text-color-active;
     }
   }
-}
-
-.infoblock{
-  h3{
-    margin: 0 0 20px;
+  h1{
+    margin-top: 0;
+  }
+  h2{
+    &::before{
+      content: "";
+      display: table;
+      clear: both;
+    }
     a {
       text-decoration: none;
       color: $text-color;
-      &:hover{
-        color: #9cc2e3;
+      &:hover, &:active{
+        color: $text-color-active;
       }
     }
-    font-size: 2.8rem;
   }
-  h4{
-    @extend h3;
-    font-size: 2.2rem
-  }
-  h5{
-    @extend h3;
-    font-size: 2.0rem
-  }
-  border-radius: 10px;
-  padding: 20px 30px;
-  box-sizing: border-box;
-  border: 5px solid rgba(255,255,255,0);
-  position: relative;
-  p, a, ul>li{
-    font-size: $text-size;
-    letter-spacing: 0.7px;
-    line-height: 2.5rem;
-  }
-  a{
-    color: #9cc2e3;
-    &:hover{
-      color: #9cc2e3;
+
+  .infoblock{
+    h3{
+      margin: 0 0 20px;
+      a {
+        text-decoration: none;
+        color: $text-color;
+        &:hover{
+          color: $text-color-active;
+        }
+      }
+      font-size: 2.8rem;
     }
-    &.contact{
+    h4{
+      @extend h3;
+      font-size: 2.2rem
+    }
+    h5{
+      @extend h3;
+      font-size: 2.0rem
+    }
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border: 5px solid rgba(255,255,255,0);
+    position: relative;
+    p, a, ul>li{
+      font-size: $text-size;
+      letter-spacing: 0.7px;
+      line-height: 2.5rem;
+    }
+    a{
       color: $text-color;
+      &:hover{
+        color: $text-color-active;
+      }
+      &.contact{
+        color: $text-color;
+      }
     }
   }
-}
-.session-task, .session-result{
-  @extend .infoblock;
-}
-// examples directive
-.example-details{
-  position: relative;
-  // height: 300px;
-  img{
-    width: 100%;
+  .session-task, .session-result{
+    @extend .infoblock;
   }
-  %examples{
-    position: absolute;
-    left: 0;
-    right: 0;
-    color: #000;
-    background: linear-gradient(to bottom, transparent,#fff,transparent);
-    margin: 0;
-    padding: 10px;
-  }
-  p{
-    @extend %examples;
-    bottom: 0;
-    height: 60px;
-  }
-  h4{
-    @extend %examples;
-    top:0;
+  // examples directive
+  .examples{
+    display: flex;
+    justify-content: center;
+    .example-details{
+      position: relative;
+      width: 33.33333333%;
+      // height: 300px;
+      &.previous {
+        float: left;
+        order:1;
+        &:before{
+          content: "";
+          display: table;
+          width: 100%;
+          height: 100%;
+          background: -webkit-linear-gradient(90deg, $block-color2, transparent);
+          background: -o-linear-gradient(90deg, $block-color2, transparent);
+          background: linear-gradient(90deg, $block-color2, transparent);
+          position: absolute;
+          z-index: 2;
+        }
+      }
+      &.next{
+        float: right;
+        order:3;
+        &:before{
+          content: "";
+          display: table;
+          width: 100%;
+          height: 100%;
+          background: -webkit-linear-gradient(270deg, $block-color2, transparent);
+          background: -o-linear-gradient(270deg, $block-color2, transparent);
+          background: linear-gradient(270deg, $block-color2, transparent);
+          position: absolute;
+          z-index: 2;
+        }
+      }
+      &.active{
+        order:2;
+      }
+      img{
+        width: 100%;
+      }
+      %examples{
+        position: absolute;
+        left: 0;
+        right: 0;
+        color: $text-color;
+        margin: 0;
+        padding: 10px;
+        &:hover{
+          color: $text-color-active;
+        }
+      }
+      p{
+        @extend %examples;
+        bottom: 0;
+        height: 60px;
+        background: linear-gradient(to bottom, transparent,$block-color2,$block-color2);
+      }
+      h4{
+        @extend %examples;
+        top:0;
+        background: linear-gradient(to top, transparent,$block-color2,$block-color2);
+      }
+    }
   }
 }
 // MAIN END
@@ -152,8 +204,9 @@ h2{
 
 // FOOTER START
 footer{
-  @extend main;
+  @extend %block;
   border: none;
+  background-color: $block-color1;
   .footBlocks{
     ul{
       list-style: none;
@@ -167,7 +220,7 @@ footer{
           color: $text-color;
           padding: 0 10px;
           &:hover,&:active{
-            color: #fff;
+            color: $text-color-active;
             background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
             text-decoration: none;
           }
