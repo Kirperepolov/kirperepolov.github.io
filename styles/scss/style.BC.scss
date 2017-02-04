@@ -34,6 +34,7 @@ nav .navbar-header a
   text-decoration: none;
   &:hover, &:active{
     text-decoration: none;
+    color: $text-color-active;
   }
 }
 .navbar-nav{
@@ -43,12 +44,16 @@ nav .navbar-header a
       color: $text-color;
       &:focus,&:hover {
         color: $text-color-active;
-        background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+        background: $block-color3;
+        border: 1px solid $block-color3;
+        border-radius: 5px;        
       }
     }
     &.active{
       a,a:focus,a:hover{
-        background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+        background: $block-color3;
+        border: 1px solid $block-color3;
+        border-radius: 5px;        
       }
     }
   }
@@ -58,17 +63,7 @@ nav .navbar-header a
 // MAIN
 main {
   @extend %block;
-  .svg-logo-desktop {
-    width: 20.25rem;
-    max-width: 100%;
-    max-height: 4.125rem;
-    :hover{
-      cursor: pointer;
-    }
-    g {
-      fill: $text-color-active;
-    }
-  }
+
   h1{
     margin-top: 0;
   }
@@ -107,10 +102,8 @@ main {
       @extend h3;
       font-size: 2.0rem
     }
-    border-radius: 10px;
     padding: 20px 30px;
     box-sizing: border-box;
-    border: 5px solid rgba(255,255,255,0);
     position: relative;
     p, a, ul>li{
       font-size: $text-size;
@@ -121,14 +114,13 @@ main {
       color: $text-color;
       &:hover{
         color: $text-color-active;
+        text-decoration: none;
       }
-      &.contact{
-        color: $text-color;
+
+      i.fa{
+        font-size: ($text-size*3.5);
       }
     }
-  }
-  .session-task, .session-result{
-    @extend .infoblock;
   }
   // examples directive
   .examples{
@@ -137,7 +129,8 @@ main {
     .example-details{
       position: relative;
       width: 33.33333333%;
-      // height: 300px;
+      border: 15px solid $block-color2;
+
       &.previous {
         float: left;
         order:1;

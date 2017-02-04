@@ -22,6 +22,11 @@
         templateUrl:'src/contact/contact.template.html'
       })
 
+      .state('about-project',{
+        url:'/about-project',
+        templateUrl:'src/about/about.template.html'
+      })
+
       .state('examples',{
         url:'/examples',
         templateUrl:'src/examples/examples.template.html',
