@@ -1,14 +1,31 @@
 // variables
-$text-color:#E6E1FF;
-$text-color-active: #fff;
 $text-size: 1.6rem;
-$block-color1: #8577CC;
-$block-color2:#534A7F;
-$block-color3:#A694FF;
-$block-color4:#360FFF;
+/*// ORANGE-BLUE COLOR SCHEME
+$text-color:#fff;
+$text-color-active: #fff;
+$block-color1: #02B3E4;
+$block-color2:#F95C3C;
+$block-color3:#02CCBA;
+$block-color4:#fff;
+*/
+/*
+// TRAVELER COLOR SCHEME
+$text-color:#AB0433;
+$text-color-active: #5E0C23;
+$block-color1: #FFED07;
+$block-color2:#05BEF7;
+$block-color3:#D1C306;
+$block-color4:#13C1F7;
+*/
+// Color-Theme-4 COLOR SCHEME
+$text-color:#F2D8A7;
+$text-color-active: #F24F13;
+$block-color1: #4D688C;
+$block-color2:#384759;
+$block-color4:#F2D8A7;
 
 %block{
-  border-bottom: 4px double $block-color4;
+  border-bottom: 4px double $text-color-active;
   padding: 40px 0 20px;
   background-color: $block-color2;
 }
@@ -28,13 +45,21 @@ header{
   background-color: $block-color1;
 
 }
-nav .navbar-header a
-{
+nav .navbar-header a{
   color:$text-color;
   text-decoration: none;
   &:hover, &:active{
     text-decoration: none;
     color: $text-color-active;
+  }
+}
+.navbar-toggle{
+  border-color: $text-color-active;
+  color: $text-color-active;
+  padding: 7px 10px;
+  &.collapsed{
+    border-color: $text-color;
+    color: $text-color;
   }
 }
 .navbar-nav{
@@ -44,16 +69,17 @@ nav .navbar-header a
       color: $text-color;
       &:focus,&:hover {
         color: $text-color-active;
-        background: $block-color3;
-        border: 1px solid $block-color3;
-        border-radius: 5px;        
+        background: $block-color2;
+        border: 1px solid $block-color2;
+        border-radius: 5px;
       }
     }
     &.active{
       a,a:focus,a:hover{
-        background: $block-color3;
-        border: 1px solid $block-color3;
-        border-radius: 5px;        
+        color: $text-color-active;
+        background: $block-color2;
+        border: 1px solid $block-color2;
+        border-radius: 5px;
       }
     }
   }
@@ -167,7 +193,7 @@ main {
       img{
         width: 100%;
       }
-      %examples{
+      %examples-texts{
         position: absolute;
         left: 0;
         right: 0;
@@ -179,19 +205,45 @@ main {
         }
       }
       p{
-        @extend %examples;
+        @extend %examples-texts;
         bottom: 0;
         height: 60px;
         background: linear-gradient(to bottom, transparent,$block-color2,$block-color2);
       }
       h4{
-        @extend %examples;
+        @extend %examples-texts;
         top:0;
         background: linear-gradient(to top, transparent,$block-color2,$block-color2);
       }
     }
   }
-}
+  ul.pager{
+      li{
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        border: 3px solid $block-color1;
+        // color: $block-color4;
+        box-sizing: content-box;
+        background-color: $block-color2;
+        &:nth-child(1){
+          border-radius: 50% 0 0 50%;
+        }
+        &:nth-child(2){
+          border-radius: 0 50% 50% 0;
+        }
+        &:hover{
+          cursor: pointer;
+          background-color: $block-color1;
+        }
+        &:active{
+          color: $text-color-active;
+          background-color: $block-color1;
+        }
+      }
+    }
+  }
 // MAIN END
 
 
@@ -208,13 +260,19 @@ footer{
       li{
         margin-top: 15px;
         line-height: 40px;
+        border-radius: 5px;
+        color: $text-color;
+        &:hover,&.active{
+          color: $text-color-active;
+          background: $block-color2;
+        }
         a{
           font-size: $text-size;
-          color: $text-color;
+          color: inherit;
           padding: 0 10px;
           &:hover,&:active{
-            color: $text-color-active;
-            background: radial-gradient(closest-side, rgba(255,255,255,0.2), transparent);
+            color: inherit;
+            background: $block-color2;
             text-decoration: none;
           }
         }
@@ -273,4 +331,13 @@ footer{
     font-size: 32px;
   }
   /*Header end*/
+   /* main start*/
+  main{
+   .examples{
+     .example-details{
+      width: auto;
+      }
+    }
+  }
+   /* main end*/
 }

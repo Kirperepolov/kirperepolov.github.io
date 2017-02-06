@@ -16,14 +16,22 @@
       if (activeSlide===index){
         return "active";
       } else if (activeSlide===(index-1+examplesQuantity)%examplesQuantity) {
-        return "next";
+        return "next hidden-sm hidden-xs";
       } else if (activeSlide===(index+1+examplesQuantity)%examplesQuantity) {
-        return "previous";
+        return "previous hidden-sm hidden-xs";
       } else {return "hidden"};
     };
 
     exmpCtrl.activate = function(index){
       activeSlide = index;
+    };
+
+    exmpCtrl.prev = function(){
+      activeSlide = (activeSlide-1+examplesQuantity)%examplesQuantity;
+    };
+
+    exmpCtrl.next = function(){
+      activeSlide = (activeSlide+1+examplesQuantity)%examplesQuantity;
     };
 
   };

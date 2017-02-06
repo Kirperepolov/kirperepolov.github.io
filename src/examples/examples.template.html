@@ -3,12 +3,19 @@
     <div class="example-details"
     ng-class="exmpCtrl.whattheClass($index)"
     ng-repeat="example in exmpCtrl.examples"
-    ng-click="exmpCtrl.activate($index)">
+    ng-click="exmpCtrl.activate($index)"
+    data-toggle="tooltip" data-placement="top" title="{{example.description}}">
       <img ng-src="src/images/examples/{{example.shortName+'_480.png'}}" alt="{{example.shortName}}">
       <a  ng-href="{{example.url}}" target="_blank">
         <h4 class="text-center">{{example.header}}</h4>
-        <p class="text-center">{{example.description}}</p>
+        <p class="text-center visible-sm visible-xs">{{example.description}}</p>
       </a>
-    </a>
+    </div>
+  </div>
+  <div class="row">
+    <ul class="pager center-block">
+      <li ng-click="exmpCtrl.prev()">Previous</li>
+      <li ng-click="exmpCtrl.next()">Next</li>
+    </ul>
   </div>
 </div>
