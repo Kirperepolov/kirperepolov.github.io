@@ -25,8 +25,8 @@ $block-color2:#384759;
 $block-color4:#F2D8A7;
 
 %block{
-  border-bottom: 4px double $text-color-active;
-  padding: 40px 0 20px;
+  border-bottom: 10px double $text-color-active;
+  padding: 20px 0 10px;
   background-color: $block-color2;
 }
 // BODY COMMON PART
@@ -109,6 +109,10 @@ main {
   }
 
   .infoblock{
+    min-height: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
     h3{
       margin: 0 0 20px;
       a {
@@ -128,9 +132,6 @@ main {
       @extend h3;
       font-size: 2.0rem
     }
-    padding: 20px 30px;
-    box-sizing: border-box;
-    position: relative;
     p, a, ul>li{
       font-size: $text-size;
       letter-spacing: 0.7px;
@@ -145,6 +146,7 @@ main {
 
       i.fa{
         font-size: ($text-size*3.5);
+        margin: 30px auto 0;
       }
     }
   }
@@ -265,6 +267,7 @@ footer{
         &:hover,&.active{
           color: $text-color-active;
           background: $block-color2;
+          cursor: pointer;
         }
         a{
           font-size: $text-size;
@@ -272,7 +275,6 @@ footer{
           padding: 0 10px;
           &:hover,&:active{
             color: inherit;
-            background: $block-color2;
             text-decoration: none;
           }
         }
