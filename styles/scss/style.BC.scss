@@ -1,5 +1,6 @@
 // variables
 $text-size: 1.6rem;
+$example-width:500px;
 /*// ORANGE-BLUE COLOR SCHEME
 $text-color:#fff;
 $text-color-active: #fff;
@@ -17,15 +18,21 @@ $block-color2:#05BEF7;
 $block-color3:#D1C306;
 $block-color4:#13C1F7;
 */
+/*
 // FLAT IU COLOR SCHEME
 $text-color:#ECF0F1;
 $text-color-active: #E74C3C;
 $block-color1: #2980B9;
 $block-color2:#2C3E50;
 $block-color4:#3498DB;
-
+*/
+// FLAT IU COLOR SCHEME
+$text-color:#CDFFFF;
+$text-color-active: #E74C3C;
+$block-color1: #CDFFFF;
+$block-color2:#400D12;
+$block-color4:#4FD5D6;
 %block{
-  border-bottom: 10px double $block-color1;
   padding: 20px 0 10px;
   // background-color: $block-color2;
 }
@@ -34,11 +41,7 @@ html{
   height: 100%;
 }
 body {
-  background-image: url(../../src/images/keyboard-wallpaper-13.jpg);
-  background-position:  top center;
-  background: $block-color4;
-  background-size:cover;
-  color: $block-color2;
+  color: $text-color;
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
@@ -48,7 +51,12 @@ body {
 // header start
 header{
   @extend %block;
-  background-color: $block-color2;
+  border-bottom: 10px double $block-color1;
+  // background-color: $block-color2;
+  background-image: url("../../src/images/hexagon-brown-glow-gradient-1920x1080.svg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   flex: 0 0 auto;
 }
 nav .navbar-header a{
@@ -83,9 +91,11 @@ nav .navbar-header a{
     &.active{
       a,a:focus,a:hover{
         color: $text-color-active;
-        background: $block-color2;
-        border: 1px solid $block-color2;
+        /* the next background can highlight the navigation active button */
+        // background: $block-color2;
+        // border: 1px solid $block-color2;
         border-radius: 5px;
+        font-weight: bold;
       }
     }
   }
@@ -99,8 +109,11 @@ nav .navbar-header a{
 main {
   @extend %block;
   flex: 1 0 auto;
-  background-color: $block-color1;
-
+  background-image: url("../../src/images/8429-abstract-light-turquoise-hexagonal-background-design.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $block-color2;
   h1{
     margin-top: 0;
   }
@@ -114,7 +127,7 @@ main {
       text-decoration: none;
       color: $block-color2;
       &:hover, &:active{
-        color: $block-color1;
+        color: $text-color-active;
       }
     }
   }
@@ -130,7 +143,7 @@ main {
         text-decoration: none;
         color: $block-color1;
         &:hover{
-          color: $block-color2;
+          color: $text-color-active;
         }
       }
       font-size: 2.8rem;
@@ -151,7 +164,7 @@ main {
     a{
       color: $block-color2;
       &:hover{
-        color: $block-color1;
+        color: $text-color-active;
         text-decoration: none;
       }
 
@@ -169,9 +182,9 @@ main {
       position: relative;
       width: 33.33333333%;
       border: 15px solid $text-color;
+      border-bottom-width: 40px;
 
       &.previous {
-        float: left;
         order:1;
         &:before{
           content: "";
@@ -186,12 +199,11 @@ main {
         }
       }
       &.next{
-        float: right;
         order:3;
         &:before{
           content: "";
           display: table;
-          width: 100%;
+          width: 101%;
           height: 100%;
           background: -webkit-linear-gradient(270deg, $text-color, transparent);
           background: -o-linear-gradient(270deg, $text-color, transparent);
@@ -213,7 +225,7 @@ main {
         color: $block-color2;
         margin: 0;
         &:hover{
-          color: $block-color1;
+          color: $text-color-active;
         }
       }
       p{
@@ -222,12 +234,16 @@ main {
         height: 60px;
         background: linear-gradient(to bottom, transparent,$text-color,$text-color);
         padding: 20px 0 0;
+        // background-color: $text-color;
+
       }
       h4{
         @extend %examples-texts;
         top:0;
         background: linear-gradient(to top, transparent,$text-color,$text-color);
         padding: 0 0 20px;
+        // background-color: $text-color;
+
       }
     }
   }
@@ -265,8 +281,14 @@ main {
 footer{
   @extend %block;
   flex: 0 0 auto;
-  border: none;
-  background-color: $block-color2;
+  border-top: 10px double $block-color1;
+  // background-color: $block-color2;
+  //
+  background-image: url("../../src/images/hexagon-brown-glow-gradient-1920x1080.svg");
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
   .footBlocks{
     ul{
       list-style: none;
@@ -279,8 +301,9 @@ footer{
         color: $text-color;
         &:hover,&.active{
           color: $text-color-active;
-          background: $block-color2;
+          // background: $block-color2;
           cursor: pointer;
+          font-weight: bold;
         }
         a{
           font-size: $text-size;
@@ -336,11 +359,14 @@ footer{
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+  // variables
+  $example-width: 180px;
   /* Header */
-
 }
 
 @media (max-width: 991px) {
+  // variables
+  $example-width: 180px;
   /* Header */
   h1{
     font-size: 32px;
@@ -355,4 +381,9 @@ footer{
     }
   }
    /* main end*/
+}
+@media (max-width: 1199px) {
+  // variables
+  $example-width: 240px;
+  /* Header */
 }
