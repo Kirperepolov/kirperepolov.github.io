@@ -15,348 +15,364 @@ $block-color2:#05BEF7;
 $block-color3:#D1C306;
 $block-color4:#13C1F7;
 */
-/* line 27, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/*
+// FLAT IU COLOR SCHEME
+$text-color:#ECF0F1;
+$text-color-active: #E74C3C;
+$block-color1: #2980B9;
+$block-color2:#2C3E50;
+$block-color4:#3498DB;
+*/
+/* line 35, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 header, main, footer {
-  border-bottom: 10px double #2980B9;
+  border-bottom: 10px double #CDFFFF;
   padding: 20px 0 10px;
 }
 
-/* line 33, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 41, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 html {
   height: 100%;
 }
 
-/* line 36, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 44, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 body {
   background-image: url(../../src/images/keyboard-wallpaper-13.jpg);
   background-position: top center;
-  background: #3498DB;
-  background-size: cover;
-  color: #2C3E50;
+  background: #4FD5D6;
+  background-size: initial;
+  color: #400D12;
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-/* line 49, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 57, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 header {
-  background-color: #2C3E50;
+  background-image: url("../../src/images/hexagon-brown-glow-gradient-1920x1080.svg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   flex: 0 0 auto;
 }
 
-/* line 54, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 66, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 nav .navbar-header a {
-  color: #ECF0F1;
+  color: #CDFFFF;
   text-decoration: none;
 }
 
-/* line 57, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 69, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 nav .navbar-header a:hover, nav .navbar-header a:active {
   text-decoration: none;
   color: #E74C3C;
 }
 
-/* line 62, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 74, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-toggle {
   border-color: #E74C3C;
   color: #E74C3C;
   padding: 7px 10px;
 }
 
-/* line 66, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 78, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-toggle.collapsed {
-  border-color: #ECF0F1;
-  color: #ECF0F1;
+  border-color: #CDFFFF;
+  color: #CDFFFF;
 }
 
-/* line 73, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 85, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-nav li a {
   font-size: 1.6rem;
-  color: #ECF0F1;
+  color: #CDFFFF;
 }
 
-/* line 76, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 88, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-nav li a:focus, .navbar-nav li a:hover {
   color: #E74C3C;
-  background: #2C3E50;
-  border: 1px solid #2C3E50;
+  background: #400D12;
+  border: 1px solid #400D12;
   border-radius: 5px;
 }
 
-/* line 84, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 96, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-nav li.active a, .navbar-nav li.active a:focus, .navbar-nav li.active a:hover {
   color: #E74C3C;
-  background: #2C3E50;
-  border: 1px solid #2C3E50;
+  /* the next background can highlight the navigation active button */
   border-radius: 5px;
+  font-weight: bold;
 }
 
-/* line 93, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 107, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 .navbar-text {
   margin-top: 8px;
 }
 
-/* line 99, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 113, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main {
   flex: 1 0 auto;
-  background-color: #2980B9;
+  background-image: url("../../src/images/8429-abstract-light-turquoise-hexagonal-background-design.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* line 104, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 120, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main h1 {
   margin-top: 0;
 }
 
-/* line 108, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 124, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main h2::before {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 113, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 129, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main h2 a {
   text-decoration: none;
-  color: #2C3E50;
+  color: #400D12;
 }
 
-/* line 116, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 132, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main h2 a:hover, main h2 a:active {
-  color: #2980B9;
+  color: #E74C3C;
 }
 
-/* line 122, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 138, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock {
   padding: 30px;
   box-sizing: border-box;
   position: relative;
-  background-color: #ECF0F1;
+  background-color: #CDFFFF;
 }
 
-/* line 127, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 143, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock h3, main .infoblock h4, main .infoblock h5 {
   margin: 0 0 20px;
   font-size: 2.8rem;
 }
 
-/* line 129, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 145, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock h3 a, main .infoblock h4 a, main .infoblock h5 a {
   text-decoration: none;
-  color: #2980B9;
+  color: #CDFFFF;
 }
 
-/* line 132, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 148, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock h3 a:hover, main .infoblock h4 a:hover, main .infoblock h5 a:hover {
-  color: #2C3E50;
+  color: #E74C3C;
 }
 
-/* line 138, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 154, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock h4 {
   font-size: 2.2rem;
 }
 
-/* line 142, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 158, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock h5 {
   font-size: 2.0rem;
 }
 
-/* line 146, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 162, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock p, main .infoblock a, main .infoblock ul > li {
   font-size: 1.6rem;
   letter-spacing: 0.7px;
   line-height: 2.5rem;
 }
 
-/* line 151, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 167, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock a {
-  color: #2C3E50;
+  color: #400D12;
 }
 
-/* line 153, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 169, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock a:hover {
-  color: #2980B9;
+  color: #E74C3C;
   text-decoration: none;
 }
 
-/* line 158, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 174, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .infoblock a i.fa {
   font-size: 5.6rem;
   margin: 30px auto 0;
 }
 
-/* line 165, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 181, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples {
   display: flex;
   justify-content: center;
 }
 
-/* line 168, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 184, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details {
   position: relative;
   width: 33.33333333%;
-  border: 15px solid #ECF0F1;
+  border: 15px solid #CDFFFF;
+  border-bottom-width: 40px;
 }
 
-/* line 173, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 190, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details.previous {
-  float: left;
   order: 1;
 }
 
-/* line 176, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 192, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details.previous:before {
   content: "";
   display: table;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(90deg, #ECF0F1, transparent);
-  background: -o-linear-gradient(90deg, #ECF0F1, transparent);
-  background: linear-gradient(90deg, #ECF0F1, transparent);
+  background: -webkit-linear-gradient(90deg, #CDFFFF, transparent);
+  background: -o-linear-gradient(90deg, #CDFFFF, transparent);
+  background: linear-gradient(90deg, #CDFFFF, transparent);
   position: absolute;
   z-index: 2;
 }
 
-/* line 188, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 204, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details.next {
-  float: right;
   order: 3;
 }
 
-/* line 191, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 206, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details.next:before {
   content: "";
   display: table;
-  width: 100%;
+  width: 101%;
   height: 100%;
-  background: -webkit-linear-gradient(270deg, #ECF0F1, transparent);
-  background: -o-linear-gradient(270deg, #ECF0F1, transparent);
-  background: linear-gradient(270deg, #ECF0F1, transparent);
+  background: -webkit-linear-gradient(270deg, #CDFFFF, transparent);
+  background: -o-linear-gradient(270deg, #CDFFFF, transparent);
+  background: linear-gradient(270deg, #CDFFFF, transparent);
   position: absolute;
   z-index: 2;
 }
 
-/* line 203, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 218, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details.active {
   order: 2;
 }
 
-/* line 206, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 221, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details img {
   width: 100%;
 }
 
-/* line 209, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 224, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details p, main .examples .example-details h4 {
   position: absolute;
   left: 0;
   right: 0;
-  color: #2C3E50;
+  color: #400D12;
   margin: 0;
 }
 
-/* line 215, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 230, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details p:hover, main .examples .example-details h4:hover {
-  color: #2980B9;
+  color: #E74C3C;
 }
 
-/* line 219, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 234, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details p {
   bottom: 0;
   height: 60px;
-  background: linear-gradient(to bottom, transparent, #ECF0F1, #ECF0F1);
+  background: linear-gradient(to bottom, transparent, #CDFFFF, #CDFFFF);
   padding: 20px 0 0;
 }
 
-/* line 226, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 243, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main .examples .example-details h4 {
   top: 0;
-  background: linear-gradient(to top, transparent, #ECF0F1, #ECF0F1);
+  background: linear-gradient(to top, transparent, #CDFFFF, #CDFFFF);
   padding: 0 0 20px;
 }
 
-/* line 235, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 254, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main ul.pager li {
   display: inline-block;
   width: 80px;
   height: 30px;
   line-height: 30px;
-  border: 3px solid #2C3E50;
+  border: 3px solid #400D12;
   box-sizing: content-box;
-  background-color: #3498DB;
+  background-color: #4FD5D6;
 }
 
-/* line 244, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 263, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main ul.pager li:nth-child(1) {
   border-radius: 50% 0 0 50%;
 }
 
-/* line 247, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 266, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main ul.pager li:nth-child(2) {
   border-radius: 0 50% 50% 0;
 }
 
-/* line 250, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 269, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main ul.pager li:hover {
   cursor: pointer;
-  background-color: #2980B9;
+  background-color: #CDFFFF;
 }
 
-/* line 254, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 273, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 main ul.pager li:active {
   color: #E74C3C;
-  background-color: #2980B9;
+  background-color: #CDFFFF;
 }
 
-/* line 265, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 284, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer {
   flex: 0 0 auto;
   border: none;
-  background-color: #2C3E50;
+  background-image: url("../../src/images/hexagon-brown-glow-gradient-1920x1080.svg");
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-/* line 271, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 296, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
-/* line 275, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 300, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks ul li {
   margin-top: 15px;
   line-height: 40px;
   border-radius: 5px;
-  color: #ECF0F1;
+  color: #CDFFFF;
 }
 
-/* line 280, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 305, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks ul li:hover, footer .footBlocks ul li.active {
   color: #E74C3C;
-  background: #2C3E50;
   cursor: pointer;
+  font-weight: bold;
 }
 
-/* line 285, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 311, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks ul li a {
   font-size: 1.6rem;
   color: inherit;
   padding: 0 10px;
 }
 
-/* line 289, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 315, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks ul li a:hover, footer .footBlocks ul li a:active {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 296, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 322, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc {
   display: flex;
   justify-content: center;
 }
 
-/* line 299, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 325, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #fb, footer .footBlocks .soc #li, footer .footBlocks .soc #gh {
   height: 40px;
   width: 40px;
@@ -368,32 +384,32 @@ footer .footBlocks .soc #fb, footer .footBlocks .soc #li, footer .footBlocks .so
   background-size: 500%;
 }
 
-/* line 309, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 335, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #fb {
   background-position: 0 -120px;
 }
 
-/* line 312, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 338, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #fb:hover {
   background-position: 0 0;
 }
 
-/* line 316, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 342, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #li {
   background-position: -40px -40px;
 }
 
-/* line 319, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 345, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #li:hover {
   background-position: -40px 0;
 }
 
-/* line 323, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 349, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #gh {
   background-position: -80px -40px;
 }
 
-/* line 326, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+/* line 352, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
 footer .footBlocks .soc #gh:hover {
   background-position: -80px 0;
 }
@@ -405,17 +421,21 @@ footer .footBlocks .soc #gh:hover {
 
 @media (max-width: 991px) {
   /* Header */
-  /* line 345, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+  /* line 374, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
   h1 {
     font-size: 32px;
   }
   /*Header end*/
   /* main start*/
-  /* line 352, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
+  /* line 381, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.BC.scss */
   main .examples .example-details {
     width: auto;
   }
   /* main end*/
 }
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuQkMuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLkJDLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFFQTs7Ozs7OztFQU9FO0FBQ0Y7Ozs7Ozs7O0VBUUU7O0FBOEJGLEFBdEJBLE1Bc0JNLEVBa0ROLEFBeEVBLElBd0VJLEVBc0tKLEFBOU9BLE1BOE9NLENBOU9BO0VBQ0osYUFBYSxFQUFFLElBQUksQ0FBQyxNQUFNLENBTGIsT0FBTztFQU1wQixPQUFPLEVBQUUsV0FBVztDQUVyQjs7O0FBRUQsQUFBQSxJQUFJLENBQUE7RUFDRixNQUFNLEVBQUUsSUFBSTtDQUNiOzs7QUFDRCxBQUFBLElBQUksQ0FBQztFQUNILGdCQUFnQixFQUFFLCtDQUErQztFQUNqRSxtQkFBbUIsRUFBRyxVQUFVO0VBQ2hDLFVBQVUsRUFkRSxPQUFPO0VBZW5CLGVBQWUsRUFBQyxLQUFLO0VBQ3JCLEtBQUssRUFqQk8sT0FBTztFQWtCbkIsV0FBVyxFQUFFLG9CQUFvQjtFQUNqQyxPQUFPLEVBQUUsSUFBSTtFQUNiLGNBQWMsRUFBRSxNQUFNO0VBQ3RCLE1BQU0sRUFBRSxJQUFJO0NBRWI7OztBQUVELEFBQUEsTUFBTSxDQUFBO0VBRUosZ0JBQWdCLEVBM0JKLE9BQU87RUE0Qm5CLElBQUksRUFBRSxRQUFRO0NBQ2Y7OztBQUNELEFBQUksR0FBRCxDQUFDLGNBQWMsQ0FBQyxDQUFDLENBQUE7RUFDbEIsS0FBSyxFQWxDSyxPQUFPO0VBbUNqQixlQUFlLEVBQUUsSUFBSTtDQUt0Qjs7O0FBUEQsQUFBSSxHQUFELENBQUMsY0FBYyxDQUFDLENBQUMsQUFHbEIsTUFBTyxFQUhULEFBQUksR0FBRCxDQUFDLGNBQWMsQ0FBQyxDQUFDLEFBR1QsT0FBUSxDQUFBO0VBQ2YsZUFBZSxFQUFFLElBQUk7RUFDckIsS0FBSyxFQXJDVyxPQUFPO0NBc0N4Qjs7O0FBRUgsQUFBQSxjQUFjLENBQUE7RUFDWixZQUFZLEVBekNNLE9BQU87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 */
+@media (max-width: 1199px) {
+  /* Header */
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuQkMuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLkJDLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFHQTs7Ozs7OztFQU9FO0FBQ0Y7Ozs7Ozs7O0VBUUU7QUFDRjs7Ozs7OztFQU9FOztBQTZCRixBQXRCQSxNQXNCTSxFQXdETixBQTlFQSxJQThFSSxFQTJLSixBQXpQQSxNQXlQTSxDQXpQQTtFQUNKLGFBQWEsRUFBRSxJQUFJLENBQUMsTUFBTSxDQUpiLE9BQU87RUFLcEIsT0FBTyxFQUFFLFdBQVc7Q0FFckI7OztBQUVELEFBQUEsSUFBSSxDQUFBO0VBQ0YsTUFBTSxFQUFFLElBQUk7Q0FDYjs7O0FBQ0QsQUFBQSxJQUFJLENBQUM7RUFDSCxnQkFBZ0IsRUFBRSwrQ0FBK0M7RUFDakUsbUJBQW1CLEVBQUcsVUFBVTtFQUNoQyxVQUFVLEVBYkUsT0FBTztFQWNuQixlQUFlLEVBQUUsT0FBTztFQUN4QixLQUFLLEVBaEJPLE9BQU87RUFpQm5CLFdBQVcsRUFBRSxvQkFBb0I7RUFDakMsT0FBTyxFQUFFLElBQUk7RUFDYixjQUFjLEVBQUUsTUFBTTtFQUN0QixNQUFNLEVBQUUsSUFBSTtDQUViOzs7QUFFRCxBQUFBLE1BQU0sQ0FBQTtFQUdKLGdCQUFnQixFQUFFLGlFQUFpRTtFQUNuRixtQkFBbUIsRUFBRSxVQUFVO0VBQy9CLGVBQWUsRUFBRSxLQUFLO0VBQ3RCLGlCQUFpQixFQUFFLFNBQVM7RUFDNUIsSUFBSSxFQUFFLFFBQVE7Q0FDZjs7O0FBQ0QsQUFBSSxHQUFELENBQUMsY0FBYyxDQUFDLENBQUMsQ0FBQTtFQUNsQixLQUFLLEVBckNLLE9BQU87RUFzQ2pCLGVBQWUsRUFBRSxJQUFJO0NBS3RCOzs7QUFQRCxBQUFJLEdBQUQsQ0FBQyxjQUFjLENBQUMsQ0FBQyxBQUdsQixNQUFPLEVBSFQsQUFBSSxHQUFELENBQUMsY0FBYyxDQUFDLENBQUMsQUFHVCxPQUFRLENBQUE7RUFDZixlQUFl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 */
