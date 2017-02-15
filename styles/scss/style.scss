@@ -1,78 +1,348 @@
-/* BODY ITSELF*/
-body{
-  background: url(../../src/images/desert-mountain-highway-sky-cloud.jpg) center top no-repeat;
-  background-size: cover;
-  font-family: 'Ubuntu', sans-serif;
-  color: #ddd;
-  .container{
-    background-color: rgba(95, 59, 33, 0.7);
+// VARIABLES
+
+$text-size: 1.6rem;
+$example-width:500px;
+
+// HEXAGON COLOR SCHEME
+
+$bright-color: #E74C3C;
+$light-color1: #CDFFFF;
+$light-color2: #4FD5D6;
+$dark-color: #400D12;
+
+%link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: $text-size;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: none;
+    color: $bright-color;
+    font-weight: 700;
+    text-decoration: inherit;
   }
 }
-/* end of body style */
+
+// DOCUMENT COMMON PART
+html{
+  height: 100%;
+}
+body {
+  color: $light-color1;
+  display: flex;
+  flex-direction: column;  //flex here is used for the sticky footer
+  font: 'Ubuntu';
+  height: 100%;
+}
 
 
 // HEADER
 
-  // .jumbotron{
-  //   background-image: url(../../src/images/desert-mountain-highway-sky-cloud.jpg);
-  //   background-position: center -660px;
-  //   margin: 0;
-  //   .navbar-default {
-  //     background-color: transparent;
-  //     color: #fff;
-  //     border: none;
-  //     .navbar-nav{
-  //       li{
-  //         a{
-  //           color: #ddd;
-  //           &:hover,
-  //           &:active{
-  //             color: #fff;
-  //             cursor: pointer;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+header {
+  background: url(../../src/images/hexagon-brown-glow-gradient-1920x1080.svg) no-repeat top center/cover;
+  border-bottom: 10px double $light-color1;
+  flex: 0 0 auto;  //flex here is used for the sticky footer
+  padding: 20px 0 10px;
+}
+
+//have to change the default bootstrap navbar style
+
+.navbar-toggle {
+  border-color: $bright-color;
+  color: $bright-color;
+  padding: 7px 10px;
+
+  &.collapsed {
+    border-color: $light-color1;
+    color: $light-color1;
+  }
+}
+
+.nav.navbar-nav {
+    a {
+      @extend %link;
+    }
+
+    .active {
+      a,
+      a:focus,
+      a:hover {
+        color: $bright-color;
+        font-weight: bold;
+      }
+    }
+
+}
+
+.navbar-text {
+  margin-top: 8px; //have no idea what other margins are
+}
 
 // HEADER END
 
 // MAIN
-main{
-  font-size: 13pt;
-  ul {
-    list-style: circle outside;
-   }
+
+main {
+  background: url('../../src/images/8429-abstract-light-turquoise-hexagonal-background-design.jpg') no-repeat bottom center/cover;
+  color: $dark-color;
+  flex: 1 0 auto;  //flex here is used for the sticky footer
+  font-size: $text-size;
+  letter-spacing: 0.7px;
+  padding: 20px 0 10px;
+
+  h1 {
+    margin-top: 0;  //have no idea what other margins are
+  }
+
+  a {
+    @extend %link;
+  }
+
+  .infoblock {
+    background: $light-color1;
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+
+    h3 {
+      font-size: $text-size*1.75;
+      margin: 0 0 20px;
+    }
+    h4 {
+      @extend h3;
+      font-size: $text-size*1.3;
+    }
+    h5 {
+      @extend h3;
+      font-size: $text-size*1.2;
+    }
+
+    p,
+    a,
+    ul>li {
+      line-height: $text-size*1.6;
+    }
+    i.fa {
+        font-size: ($text-size*3.5);
+        margin: 30px auto 0;
+    }
+  }
+
+  // examples directive
+  .examples {
+    border: solid $light-color1;
+    border-width: 15px 15px 40px;
+    display: flex;
+    justify-content: center;
+
+    .example-details {
+      position: relative;
+      width: 33.33333333%;  //it was easier to use width parameter instead of
+                            // the bootstrap grid
+  // to organize carousel I use flex orders
+  // the previous and the next slide are partially covered so to focus attention
+  // on the active slide
+      &.active {
+        order:2;
+      }
+      &.previous {
+        order:1;
+        &:before {
+          background: -webkit-linear-gradient(90deg, $light-color1, transparent);
+               background: -o-linear-gradient(90deg, $light-color1, transparent);
+                  background: linear-gradient(90deg, $light-color1, transparent);
+          content: "";
+          display: table;
+          height: 100%;
+          position: absolute;
+          width: 100%;
+          z-index: 2;
+        }
+      }
+      &.next {
+        order:3;
+        &:before {
+          background: -webkit-linear-gradient(270deg, $light-color1, transparent);
+               background: -o-linear-gradient(270deg, $light-color1, transparent);
+                  background: linear-gradient(270deg, $light-color1, transparent);
+          content: "";
+          display: table;
+          height: 100%;
+          position: absolute;
+          width: 100%;
+          z-index: 2;
+        }
+      }
+
+      img{
+        width: 100%;
+      }
+      //some common styles for carousel texts
+      %examples-texts{
+        left: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        &:hover{
+          color: $bright-color;
+        }
+      }
+
+      p{
+        @extend %examples-texts;
+        background: linear-gradient(to bottom, transparent,$light-color1,$light-color1);
+        bottom: 0;
+        height: 60px;
+        padding: 20px 0 0;
+      }
+
+      h4{
+        @extend %examples-texts;
+        background: linear-gradient(to top, transparent,$light-color1,$light-color1);
+        padding: 0 0 20px;
+        top:0;
+      }
+    }
+  }
+
+  // buttons to control carousel
+  ul.pager{
+      li{
+        border: 3px solid $dark-color;
+        box-sizing: content-box;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        width: 80px;
+
+        &:nth-child(1){
+          border-radius: 50% 0 0 50%;
+        }
+        &:nth-child(2){
+          border-radius: 0 50% 50% 0;
+        }
+
+        &:hover{
+          cursor: pointer;
+          background-color: $light-color2;
+        }
+        &:active{
+          color: $bright-color;
+          background-color: $light-color2;
+        }
+      }
+    }
 }
 // MAIN END
 
 
-/* FOOTER */
-#tw {
-		height: 	40px;
-		width: 	40px;
-		border-radius: 20px;
-		background-color: #888888;
-		display: 	inline-block;
-		margin: 15px 15px 0 0;
-		background-image: url(../../src/images/socials.png);
-    &:hover {
-  		background-position: 0 -40px;
-  	}
-	}
-#go {
-  @extend #tw;
-	background-position: 40px 0;
-  &:hover {
-		background-position: 40px -40px;
-	}
+// FOOTER START
+footer{
+  flex: 0 0 auto;
+  border-top: 10px double $light-color1;
+
+  background-image: url("../../src/images/hexagon-brown-glow-gradient-1920x1080.svg");
+  background-position: bottom center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 20px 0 10px;
+
+  .footBlocks{
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      li{
+        margin-top: 15px;
+        line-height: 40px;
+        border-radius: 5px;
+        color: $light-color1;
+        &:hover,&.active{
+          color: $bright-color;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        a{
+          font-size: $text-size;
+          color: inherit;
+          padding: 0 10px;
+          &:hover,&:active{
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .soc{
+      display: flex;
+      justify-content: center;
+      %socials {
+        height: 	40px;
+        width: 	40px;
+        border-radius: 20px;
+        display: 	inline-block;
+        margin: 15px 15px 0 0;
+        background-image: url(../../src/images/socials_big.png);
+        background-color: transparent;
+        background-size: 500%;
+      }
+      #fb {
+        @extend %socials;
+        background-position: 0 -120px;
+        &:hover {
+          background-position: 0 0;
+        }
+      }
+      #li {
+        @extend %socials;
+        background-position: -40px -40px;
+        &:hover {
+          background-position: -40px 0;
+        }
+      }
+      #gh {
+        @extend %socials;
+        background-position: -80px -40px;
+        &:hover {
+          background-position: -80px 0;
+        }
+      }
+    }
+
+  }
 }
-#fb {
-  @extend #tw;
-	background-position: 80px 0;
-  &:hover {
-		background-position: 80px -40px;
-	}
+// FOOTER END
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  // variables
+  $example-width: 180px;
+  /* Header */
 }
-/*FOOTER END*/
+
+@media (max-width: 991px) {
+  // variables
+  $example-width: 180px;
+  /* Header */
+  h1{
+    font-size: 32px;
+  }
+  /*Header end*/
+   /* main start*/
+  main{
+   .examples{
+     .example-details{
+      width: auto;
+      }
+    }
+  }
+   /* main end*/
+}
+@media (max-width: 1199px) {
+  // variables
+  $example-width: 240px;
+  /* Header */
+}
