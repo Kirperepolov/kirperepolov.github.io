@@ -78,7 +78,7 @@ main h1 {
 
 /* line 103, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 main .infoblock {
-  background: #CDFFFF;
+  background: rgba(215, 255, 255, 0.4);
   box-sizing: border-box;
   padding: 30px;
   position: relative;
