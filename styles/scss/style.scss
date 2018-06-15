@@ -120,8 +120,12 @@ main {
 
     p,
     a,
-    ul>li {
+    ul>li,
+    ol>li {
       line-height: $text-size*1.6;
+      &.space-top {
+        margin-top: 10px;
+      }
     }
     i.fa {
         font-size: ($text-size*3.5);

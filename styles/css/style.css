@@ -103,8 +103,12 @@ main .infoblock h5 {
 /* line 122, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 main .infoblock p,
 main .infoblock a,
-main .infoblock ul > li {
+main .infoblock ul > li,
+main .infoblock ol > li {
   line-height: 2.56rem;
+}
+main .infoblock ol > li.space-top {
+  margin-top: 10px;
 }
 
 /* line 127, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */

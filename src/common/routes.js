@@ -27,6 +27,21 @@
         templateUrl:'src/about/about.template.html'
       })
 
+      .state('dubki',{
+        url:'/dubki',
+        templateUrl:'src/map/dubki.template.html'
+      })
+
+      .state('dubki-car',{
+        url:'/dubki-car',
+        templateUrl:'src/map/dubki-car.template.html'
+      })
+
+      .state('dubki-bus',{
+        url:'/dubki-bus',
+        templateUrl:'src/map/dubki-bus.template.html'
+      })
+
       .state('examples',{
         url:'/examples',
         templateUrl:'src/examples/examples.template.html',
