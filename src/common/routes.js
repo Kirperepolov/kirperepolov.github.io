@@ -34,12 +34,16 @@
 
       .state('dubki-car',{
         url:'/dubki-car',
-        templateUrl:'src/map/dubki-car.template.html'
+        templateUrl:'src/map/dubki-car.template.html',
+        controller: 'MainController',
+        controllerAs: 'ctrl'
       })
 
       .state('dubki-bus',{
         url:'/dubki-bus',
-        templateUrl:'src/map/dubki-bus.template.html'
+        templateUrl:'src/map/dubki-bus.template.html',
+        controller: 'MainController',
+        controllerAs: 'ctrl'
       })
 
       .state('examples',{

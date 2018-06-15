@@ -176,6 +176,10 @@ main .examples .example-details.next:before {
 main .examples .example-details img {
   width: 100%;
 }
+li img {
+  width: 100%;
+}
+
 
 /* line 183, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */
 main .examples .example-details p, main .examples .example-details h4 {
@@ -235,6 +239,15 @@ main ul.pager li:hover {
 main ul.pager li:active {
   color: #E74C3C;
   background-color: #4FD5D6;
+}
+
+.modal {
+  z-index: 3;
+  position: fixed;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
 }
 
 /* line 242, G:/Develop/fe_personal/kirperepolov.github.io/styles/scss/style.scss */

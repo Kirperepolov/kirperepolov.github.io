@@ -5,7 +5,7 @@
     ng-repeat="example in exmpCtrl.examples"
     ng-click="exmpCtrl.activate($index)"
     data-toggle="tooltip" data-placement="top" title="{{example.description}}">
-      <img ng-src="src/images/examples/{{example.shortName+'_480.png'}}" alt="{{example.shortName}}">
+      <img ng-src="src/images/examples/{{example.shortName}}_480.png" alt="{{example.shortName}}">
       <a  ng-href="{{example.url}}" target="_blank">
         <h4 class="text-center">{{example.header}}</h4>
         <p class="text-center visible-sm visible-xs">{{example.description}}</p>

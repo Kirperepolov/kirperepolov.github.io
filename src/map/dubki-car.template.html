@@ -12,18 +12,18 @@
     <p>Їдь зручним для тебе шляхом до Столичного шосе.</p>
   </li>
   <li class="space-top">
-    <p>Від Видубичей проїдь близько 8.4 км</p>
+    <p>Від Вgидубичей проїдь близько 8.4 км</p>
   </li>
   <li class="space-top">
     <p>Через 1 км після "Ramada Hotel" і Столичного Авторинку тобі треба повернути праворуч <b>ПЕРЕД</b> пішохідним мостом на вулицю Лісничу</p>
-    <img src="src/images/dubki/stolychne.jpg" alt="Before the pedestrian bridge">
+    <img ng-click="ctrl.activateImg($event)" class="screen-shot" src="src/images/dubki/stolychne.jpg" alt="Before the pedestrian bridge">
   </li>
   <li class="space-top">
     <p>Їдь прямо вулицею Ліснича і далі мальовничою дорогою 2.3км</p>
   </li>
   <li class="space-top">
     <p>Коли посеред дороги побачиш великий дуб - з’їжджай праворуч і їдь грунтовкою до нас.</p>
-    <img src="src/images/dubki/theGreatOak.jpg" alt="The great oak">
+    <img ng-click="ctrl.activateImg($event)" class="screen-shot" src="src/images/dubki/theGreatOak.jpg" alt="The great oak">
   </li>
   <li class="space-top">
     <p><a href="https://lh3.googleusercontent.com/O2rb8xjJobsrNekI1M7LlBVylIlfrUFL_AIHxY6ihBb6qldPlFBMdaprILv1KsaYkvtIWGo8O58fNfBcpw4hXd6gTsSe21aw6V_-2TloN3xOAJfrrcEO5z-m3wnfkIQV85WaubsILDgtfneBlIIVOgwfGAK9-v8BCDK9FqFoPU29pYbmAG2Rj1wIj2ig7bqJ018mmXdN-CySqpDuKhpN9shGwuBruRn9zcGI_CrwiH_lJ9U3Yzbrm6PnUybum3F0fJr_MP4jExT_1fY_u78gZ3NxyWFbgmZ2lnyhozsrOIW6jT_BC3dF4U1Pi1D1cjYXVfAfAautDuFvi67x5xhIAP0bi2oy12-hK3CBJX8vTNjIAcRNOVHZs0e8JzMNLFmfQtQfpR2OnjtZD0g3LOJ4--XykjdigbMhWOJ2APXHg8_E-IT2hD3F7O_8sW1ej4izy4E0JF7tDp02102Oy6aUhjSbdQ1Ol4CT-UF3iRK7dn2Eh6BcSC240IWG2KtPdZr0Ym2vkdPym8rgcrSw_ef6_5eVQuQBMOCQbXy0ZEq3-IUBgqUZpASJuDB2j_37eNB8A--Totlqxfo1l10Agrv5o8eYxTT0jM5l5PomifuQ=w1221-h917-no">Ти знайдеш нас через 250м</a></p>
@@ -32,10 +32,11 @@
     <p>Не соромся подзвонити <a href="tel:+380672204364">Кіру <i class="fa fa-phone" aria-hidden="true"></i></a>
       або <a href="tel:+380672204646">Олі <i class="fa fa-phone-square" aria-hidden="true"></i></a>
       якщо виникнуть питання.</p>
-      <img src="src/images/dubki/road.png" alt="">
+      <img ng-click="ctrl.activateImg($event)" class="screen-shot" src="src/images/dubki/road.png" alt="">
   </li>
 </ol>
 
 </section>
   </div>
 </div>
+<div class="modal" ng-click="ctrl.deactivateImg()"><img src="#" alt="" width="100%"></div>

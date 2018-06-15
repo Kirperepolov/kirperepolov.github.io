@@ -22,7 +22,7 @@
   <li class="space-top">
     <p>Треба їхати 8 зупинок до зупинки "Шляхова дiльниця", або вулиці Ліснича (щоб з водієм порозумітися).</p>
     <p>Це за "Домосферою", "Ramada Hotel" і Авторинком столичним (якщо тобі цікаво).</p>
-    <img src="src/images/dubki/thePedestrianBridge.jpg" alt="The pedestrian bridge">
+    <img ng-click="ctrl.activateImg($event)" class="screen-shot" src="src/images/dubki/thePedestrianBridge.jpg" alt="The pedestrian bridge">
   </li>
   <li class="space-top">
     <p>Переходь по пішохідному мосту через Столичне шосе, і метрів 50 повертайся до самої вул.Ліснича.</p>
@@ -31,11 +31,11 @@
     <p>Далі, йди по Лісничій вулиці і подзвони <a href="tel:+380672204364">Кіру <i class="fa fa-phone" aria-hidden="true"></i></a>
       або <a href="tel:+380672204646">Олі <i class="fa fa-phone-square" aria-hidden="true"></i></a>
       щоб ми тебе підібрали машиною. Або ж прогуляйся 2.5 км маловничою дорогою.</p>
-      <img src="src/images/dubki/LisnychaStr.png" alt="Travel by feet">
+      <img ng-click="ctrl.activateImg($event)" class="screen-shot" src="src/images/dubki/LisnychaStr.png" alt="Travel by feet">
   </li>
   <li class="space-top">
     <p>Коли посеред дороги побачиш великий дуб - звертай праворуч і йди грунтовкою до нас.</p>
-    <img src="src/images/dubki/theGreatOak.jpg" alt="The great oak">
+    <img ng-click="ctrl.activateImg($event); console.log('clicked')" class="screen-shot" src="src/images/dubki/theGreatOak.jpg" alt="The great oak">
   </li>
   <li class="space-top">
     <p><a href="https://lh3.googleusercontent.com/O2rb8xjJobsrNekI1M7LlBVylIlfrUFL_AIHxY6ihBb6qldPlFBMdaprILv1KsaYkvtIWGo8O58fNfBcpw4hXd6gTsSe21aw6V_-2TloN3xOAJfrrcEO5z-m3wnfkIQV85WaubsILDgtfneBlIIVOgwfGAK9-v8BCDK9FqFoPU29pYbmAG2Rj1wIj2ig7bqJ018mmXdN-CySqpDuKhpN9shGwuBruRn9zcGI_CrwiH_lJ9U3Yzbrm6PnUybum3F0fJr_MP4jExT_1fY_u78gZ3NxyWFbgmZ2lnyhozsrOIW6jT_BC3dF4U1Pi1D1cjYXVfAfAautDuFvi67x5xhIAP0bi2oy12-hK3CBJX8vTNjIAcRNOVHZs0e8JzMNLFmfQtQfpR2OnjtZD0g3LOJ4--XykjdigbMhWOJ2APXHg8_E-IT2hD3F7O_8sW1ej4izy4E0JF7tDp02102Oy6aUhjSbdQ1Ol4CT-UF3iRK7dn2Eh6BcSC240IWG2KtPdZr0Ym2vkdPym8rgcrSw_ef6_5eVQuQBMOCQbXy0ZEq3-IUBgqUZpASJuDB2j_37eNB8A--Totlqxfo1l10Agrv5o8eYxTT0jM5l5PomifuQ=w1221-h917-no">
@@ -46,3 +46,4 @@
 </section>
   </div>
 </div>
+<div class="modal" ng-click="ctrl.deactivateImg()"><img src="#" alt="" width="100%"></div>

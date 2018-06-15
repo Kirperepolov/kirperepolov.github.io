@@ -126,6 +126,9 @@ main {
       &.space-top {
         margin-top: 10px;
       }
+      img.screen-shot {
+        width: 100%;
+      }
     }
     i.fa {
         font-size: ($text-size*3.5);
@@ -237,6 +240,14 @@ main {
         }
       }
     }
+}
+.modal {
+  z-index: 3;
+  position: fixed;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
 }
 // MAIN END
 
